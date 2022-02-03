@@ -11,6 +11,9 @@ public class AverageTemperature {
                 calcAvg(temperatures));
         
         //Edit on remote repo
+        
+        //Find max temperature
+        System.out.println("The max temperature is: " + calcMax(temperatures));
     }
     
     //Create method to exclude temperatures outside -50 to 50 and find average
@@ -25,5 +28,17 @@ public class AverageTemperature {
             }
         }
         return totalTemperatures/numberOfTemperatures;
+    }
+    
+    public static int calcMax(int[] temperatures){
+        int maxTemperature=-200;
+        for(int i=0; i<temperatures.length;i++){
+            if(temperatures[i]>50 || temperatures[i]<-50){
+            }else{
+                if(temperatures[i]>maxTemperature)
+                maxTemperature = temperatures[i];
+            }
+        }
+        return maxTemperature;
     }
 }
