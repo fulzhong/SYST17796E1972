@@ -9,6 +9,8 @@ public class AverageTemperature {
         //Find average temperature and print
         System.out.println("The average temperature is: " + 
                 calcAvg(temperatures));
+        
+        //Edit on remote repo
     }
     
     //Create method to exclude temperatures outside -50 to 50 and find average
