@@ -6,6 +6,7 @@ public class AverageTemperature {
             temperatures[i]=(int)(Math.random()*201-100);
         }
         
+        
         //Find average temperature and print
         System.out.println("The average temperature is: " + 
                 calcAvg(temperatures));
